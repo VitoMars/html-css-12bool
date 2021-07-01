@@ -5,15 +5,24 @@
   margin: 0 auto;
 }
 
-.container::after {
+/* .container::after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 /* colonne */
-[class*="col-"] {
+/* [class*="col-"] {
   float: left;
+} */
+
+[class*="col-"] {
+  flex: 0 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-1 {
